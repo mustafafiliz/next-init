@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.wrapper {
+  padding: 2.4rem 1.6rem;
+}
+.container {
+  position: relative;
+}
+.connectorContainer {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.range {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  width: 100%;
+}
+.valueContainer {
+  position: absolute;
+  bottom: calc(1.6rem);
+  transform: translateX(-22%);
+}
+.valueInnerContainer {
+  position: relative;
+}
+.value {
+  position: absolute;
+  top: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-weight: 300;
+}

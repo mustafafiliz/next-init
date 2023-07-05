@@ -1,0 +1,18 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 4rem;
+  color: $text-color-2;
+  padding: 5.8rem 0;
+  @include medium-screen-max {
+    gap: 1.2rem;
+    font-size: 2rem;
+    padding: 2.8rem 0;
+  }
+}

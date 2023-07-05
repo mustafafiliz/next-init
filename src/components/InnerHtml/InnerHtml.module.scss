@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+.container {
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+  color: $text-color-2;
+  @include medium-screen-max {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}

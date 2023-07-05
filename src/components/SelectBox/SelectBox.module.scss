@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.container {
+  position: relative;
+}
+.requiredContainer {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 47%;
+  left: 2rem;
+  transform: translateY(-50%);
+  z-index: 1;
+  @include medium-screen-max {
+    width: 2.5rem;
+    height: 2rem;
+  }
+}
+.iconContainer {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.placeholder{
+  position: absolute;
+  z-index: 1;
+  left: 4.7rem;
+  color: $text-color-1;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  transition:all .2s ease-in-out;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.focused{
+  top: 0rem;
+  transition:all .2s ease-in-out;
+  font-size:1.2rem;
+  background-color: $color-white;
+  padding: 0 0.4rem;
+}

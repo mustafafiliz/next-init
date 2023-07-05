@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.container {
+  height: 12.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include medium-screen-max {
+    height: 8rem;
+  }
+}
+.rightPart {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  @include medium-screen-max {
+    gap: 1.4rem;
+  }
+}
+.authContainer {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  @include medium-screen-max {
+    gap: 1.4rem;
+  }
+}
+.authBtn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-width: 1px;
+  border-style: solid;
+}

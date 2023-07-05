@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+.container {
+  min-width: 60rem;
+  max-width: 96rem;
+  max-height: 85vh;
+  padding: 4rem;
+  border-radius: 2.4rem;
+  margin: 0;
+  @include medium-screen-max {
+    min-width: 94%;
+    padding: 2rem;
+    border-radius: 1.2rem;
+  }
+}
+.p0 {
+  padding: 0;
+}
+.closeBtn {
+  top: 5rem;
+  right: 4rem;
+  @include medium-screen-max {
+    top: 2.5rem;
+    right: 2rem;
+  }
+}
+.title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: $text-color-2;
+  @include medium-screen-max {
+    font-size: 2rem;
+  }
+}

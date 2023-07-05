@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://www.testmustafafiliz.com/sitemap.xml

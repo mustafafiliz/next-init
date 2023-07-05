@@ -1,0 +1,12 @@
+@import '../../styles/mixins.scss';
+
+.container {
+  height: 5rem;
+  @include medium-screen-max {
+    height: 4.2rem;
+  }
+}
+.innerContainer {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,22 @@
+@import '../../styles/mixins.scss';
+
+.btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  height: 5.2rem;
+  border-radius: 1.6rem;
+  &:hover {
+    opacity: 0.9;
+  }
+  @include medium-screen-max {
+    height: 4rem;
+    font-size: 1.4rem;
+    padding: 1rem 2.2rem;
+    border-radius: 1.2rem;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.container {
+  @include medium-screen-max {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.map {
+  height: calc(100vh - 14rem);
+  position: relative;
+  z-index: 0;
+  * {
+    border-radius: 1.6rem;
+  }
+  @include medium-screen-max {
+    height: calc(100vh);
+    overflow: hidden;
+    * {
+      border-radius: 0;
+    }
+  }
+}
